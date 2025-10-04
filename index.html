@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta name="description" content="Luka's Portfolio">
+    <meta name="author" content="Luka K.">
+
+    <title>Portfolio</title>
+</head>
+
+<body onload="dragToWindows()">
+
+<div class="desktopLeft">
+
+    <div class="desktopIcon" onclick="windowDisplay('aboutWindow', true)">
+    <i class="fa-solid fa-file-lines fa-3x"></i>
+    <span>About</span>
+    </div>
+
+    <div class="desktopIcon" onclick="windowDisplay('projectsWindow', true)">
+    <i class="fa-solid fa-folder fa-3x"></i>
+    <span>Projects</span>
+    </div>
+
+    <div class="desktopIcon" onclick="windowDisplay('galleryWindow', true)">
+    <i class="fa-solid fa-image fa-3x"></i>
+    <span>Gallery</span>
+    </div>
+
+</div>
+
+<div class="desktopRight">
+
+    <div class="desktopIcon" onclick="windowDisplay('languagesWindow', true)">
+    <i class="fa-solid fa-message fa-3x"></i>
+    <span>Languages</span>
+    </div>
+
+    <div class="desktopIcon" onclick="windowDisplay('musicWindow', true)">
+    <i class="fa-solid fa-music fa-3x"></i>
+    <span>Music</span>
+    </div>
+
+    <div class="desktopIcon" onclick="windowDisplay('binWindow', true)">
+    <i class="fa-solid fa-trash fa-3x"></i>
+    <span>Rubbish Bin</span>
+    </div>
+
+</div>
+
+<div class="window" id="aboutWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-file-lines"></i> <p>aboutMe.txt</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('aboutWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+
+  <div class="windowTab">
+    <span>File</span>
+    <span>Edit</span>
+    <span>View</span>
+  </div>
+  
+    <div class="windowContent">
+        <p>Hi, I'm a UI/UX designer based in the West Midlands and recently graduated with a BA(Hons) in Marketing Communications.</p>
+        <p>I blend visual flair with accessibility to make apps and websites that feel simple but delightful to use. I enjoy prototyping, user-focused problem solving, and picking up new programs and workflows as I go. I get the most joy from seeing an idea becoming something tangible!</p>
+        <p>Want to collab or chat? Pop me an email!<span class="cursor"></span></p>
+    </div>
+  
+</div>
+
+<div class="window" id="projectsWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-folder"></i> <p>My Projects</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('projectsWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+
+  <div class="windowTab">
+    <span>File</span>
+    <span>Edit</span>
+    <span>View</span>
+    <span>Favourites</span>
+    <span>Tools</span>
+    <span>Help</span>
+  </div>
+  
+  <div class="windowContent">
+
+    <div class="row">
+        <figure  onclick="windowDisplay('darkSkiesWindow', true)">
+            <img src="images/folderDarkSkies.png">
+            <figcaption>Dark Skies App</figcaption>
+        </figure>
+        <figure  onclick="windowDisplay('ffcWindow', true)">
+            <img src="images/folderFFC.png">
+            <figcaption>Falmouth Food Coop</figcaption>
+        </figure>
+        <figure onclick="windowDisplay('frogcastWindow', true)">
+            <img src="images/folderFrogcast.png">
+            <figcaption>Frogcast</figcaption>
+        </figure>
+        <figure  onclick="windowDisplay('kneeGuru</div>Window', true)">
+            <img src="images/folderKneeGuru.png">
+            <figcaption>KneeGuru</figcaption>
+        </figure>
+    </div>
+
+  </div>
+  
+</div>
+
+<div class="window" id="galleryWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-image"></i> <p>Gallery</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('galleryWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+    <div class="windowContent">
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/strykkPosters.png" alt="Strykk Posters" />
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/treePosterIllustration.png" alt="Tree Poster Illustration" />
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <video controls autoplay muted loop>
+              <source src="images/gallery/innocentARFilter.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/adlandPoster.png" alt="Adland Poster" />
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <video controls autoplay muted loop>
+              <source src="images/gallery/nhsRecruitment.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/destressFlyer.png" alt="Destress Office Fest Flyer" />
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/strykkMenu.png" alt="Strykk Menu" />
+          </figure>
+        </div>
+
+        <div class="gallery-item">
+          <figure>
+            <img loading="lazy" src="images/gallery/giffgaffRefurb.png" alt="giffgaff Refurb" />
+          </figure>
+        </div>
+
+      </div>
+
+    </div>
+  
+</div>
+
+
+<div class="window" id="musicWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-music"></i> <p>Last listened... </p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('musicWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+  <div class="windowContent">
+        <main id="widget">
+          <img id="albumArt" src="https://placehold.co/200" alt="Album Art Placeholder">
+          <p id="artist">Artist loading...</p>
+          <div class="marquee"><p id="track">Track loading...</p></div>
+          <p id="album">Album loading...</p>
+        </main>
+
+        <div class="music-bar">
+            <div class="indicator"></div>
+        </div>
+
+        <div class="mediaPlayback">
+            <i class="fa-solid fa-backward-step fa-2x" style="color:var(--surface1);"></i>
+            <i class="fa-solid fa-circle-play fa-3x"></i>
+            <i class="fa-solid fa-forward-step fa-2x" style="color:var(--surface1);"></i>
+        </div>
+  </div>
+  
+</div>
+
+<div class="window" id="languagesWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-message"></i> <p>Languages</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('languagesWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+  <div class="windowContent">
+    <div class="msg">
+        <img class="msgProfile" src="images/flagUK.png">
+        <div class="msgText" id="msgLeft" >
+            <p>Hello there! I speak English, Russian and learning Japanese!</p>
+        </div>
+    </div>
+    <br>
+    <div class="msg" style="flex-direction: row-reverse;">
+        <img class="msgProfile" src="images/flagRussian.png">
+        <div class="msgText" id="msgRight">
+            <p>Привет! Я говорю по-русски! </p>
+        </div>
+    </div>
+    <br>
+    <div class="msg">
+        <img class="msgProfile" src="images/flagJapan.png">
+        <div class="msgText" id="msgLeft">
+            <p>日本語を勉強している</p>
+        </div>
+    </div>
+
+  </div>
+  
+</div>
+
+<div class="window" id="frogcastWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-frog"></i> <p>Frogcast</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('frogcastWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+    <div class="windowContent">
+      <img src="images/frogcast/frogcastBanner.png">
+      <div class="section02">
+        <h2 style="color: #EF3F4D">Colour Palette</h2>
+        <img src="images/frogcast/colour.png">
+        <br><br><br><br>
+        <h2 style="color: #F8B43D">Target Audience Analysis</h2>
+        <img src="images/frogcast/pactAnalysis.png">
+        <br><br><br><br>
+        <h2 style="color: #8FAA3E">Screen Sketches</h2>
+        <img src="images/frogcast/conceptDaily.png">
+        <img src="images/frogcast/conceptDressup.png">
+        <h2 style="color: #3188DB">Concept design for Frog Character</h2>
+        <img src="images/frogcast/conceptFrog.png">
+        <br><br><br><br>
+        <h2 style="color: #855FDB">Lo-fi wireframes</h2>
+        <img src="images/frogcast/conceptWireframe.png">
+        <br><br><br><br>
+        <h2 style="color: #EF3F4D">Screens</h2>
+        <img src="images/frogcast/frogcastScreens.png">
+        <img src="images/frogcast/frogcastScreens2.png">
+      </div>
+    </div>
+  
+</div>
+
+<div class="window" id="ffcWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-cart-shopping"></i> <p>Falmouth Food Co-Op</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('ffcWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+    <div class="windowContent" style="font-family: Poppins, monospace; color: #1B2A54;">
+      <img src="images/ffc/ffcBanner.png">
+        <div class="section01" style="padding-bottom:0;">
+          <div class="section01Img" style="flex: 0 0 60%;">
+          <img src="/images/ffc/overview.png" alt="Home Screenshot">
+          </div>
+          <div class="section01Text">
+          <h2>Overview</h2>
+          <p>A prototype mobile app for Falmouth Food Co-Op, a community-run online grocery store featuring local, non-industrial farmers. Designed to simplify the current ordering process. Users have expressed the existing site being confusing and difficult to place orders on, making them reluctant to purchase from. </p>
+          </div>
+      </div>
+
+      <div class="section02">
+        <img src="images/ffc/collage.png">
+        <br><br>
+        <h2>Colour Palette</h2>
+        <img src="images/ffc/colourPalette.png">
+        <p>Simplified their existing colour palette. Bright colourful, reflecting the range of produce they sell and the range of people that they work with.</p>
+        <br>
+        <h2>Empathy Map</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio ullam blanditiis fugiat iusto atque? Consectetur rem ullam, reiciendis saepe sunt, provident laudantium quidem fugit reprehenderit, iure quod consequatur cupiditate.</p>
+          <img src="images/ffc/empathyMap.png">  
+        
+          <h2>User Flow</h2>
+          <img src="images/ffc/userflow.png">
+          <h2>Wireframes</h2>
+          <img src="images/ffc/wireframe.png">
+          <h2>App Screens</h2>
+        </div>
+        <img src="images/ffc/falmouthFoodCoop.png">
+        
+    </div>
+  
+</div>
+
+<div class="window" id="darkSkiesWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-star"></i> <p>Dark Skies App</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('darkSkiesWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+    <div class="windowContent" style="font-family: Montserrat, monospace;">
+      <img src="images/darkSkies/darkSkiesBanner.png">
+      
+      <div class="section01">
+        <div class="section01Text">
+          <h3>Overview</h3>
+          <h2>We believe everyone should get to experience stargazing.</h2>
+          <p>Stargazing is often inaccessible because good dark sky locations are hard to find - they're usually only shared by word of mouth or far-off observatories. Dark Skies is an app designed to make stargazing accessible for everyone by helping people discover safe, local dark sky locations.</p>
+        </div>
+        <div class="section01Img">
+        <img src="/images/darkSkies/darkSkiesTemp.png" alt="Screenshots">
+        </div>
+      </div>
+
+      <div class="section02">
+        <h3>Moodboard</h3>
+        <img src="/images/darkSkies/moodboard.png" alt="Moodboard">
+        <br><br>
+        <h3>User Flow</h3>
+        <img src="/images/darkSkies/userflow.png" alt="User Flow">
+        <br><br>
+        <h3>High Fidelity Wireframes</h3>
+        <img src="/images/darkSkies/wireframe.png" alt="High Fidelity Wireframes">
+        <br><br><br>
+        <h3>Typography</h3>
+        <img src="/images/darkSkies/typography.png" alt="Typography">
+
+        <h3>Colour Palette</h3>
+        <img src="/images/darkSkies/colours.png" alt="Colour Palette">
+        <br><br><br>
+
+
+        <h3>App Screenshots</h3>
+
+      <div class="section01" style="padding-bottom:0;">
+        <div class="section01Img" style="flex: 0 0 60%;">
+        <img src="/images/darkSkies/homeScreenshot.png" alt="Home Screenshot">
+        </div>
+        <div class="section01Text">
+          <h3>Homepage</h3>
+          <h2>Quis beatae </h2>
+          <p>Et dolore expedita quia corporis repellat dolore magnam. </p>
+        </div>
+      </div>
+
+        <div class="section01" style="padding-top:0;">
+        <div class="section01Text">
+          <h3>Search</h3>
+          <h2>Velit molestiae</h2>
+          <p>Eligendi veniam molestias omnis voluptatem minima autem dolor itaque.</p>
+        </div>
+        <div class="section01Img" style="flex: 0 0 60%;">
+        <img src="/images/darkSkies/searchScreenshot.png" alt="Search Screenshot">
+        </div>
+      </div>
+      <h3>Location View</h3>
+      
+      <img src="/images/darkSkies/locationScreenshot.png" alt="Location Screenshot" style="display: block; margin-left: auto; margin-right: auto;">
+      <p>Eveniet voluptatem temporibus dolores mollitia unde. Qui tenetur voluptate laudantium quos. Sit pariat occaecati sed laudantium porro.</p>
+    </div>
+    <img src="/images/darkSkies/screenshots.png">
+    </div>
+  
+</div>
+
+<div class="window" id="binWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-trash"></i> <p>Rubbish Bin</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('binWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+
+  <div class="windowTab">
+    <span>File</span>
+    <span>Edit</span>
+    <span>View</span>
+    <span>Favourites</span>
+    <span>Tools</span>
+    <span>Help</span>
+  </div>
+  
+  <div class="windowContent">
+          <div class="row">
+        <figure  onclick="windowDisplay('sealWindow', true)">
+            <i class="fa-solid fa-video fa-3x" style="padding: bottom 1em;;"></i> 
+            <figcaption>awesome.mp4</figcaption>
+        </figure>
+    </div>
+  </div>
+  
+</div>
+
+<div class="window" id="sealWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-video"></i> <p>awesome.mp4</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('sealWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+  
+  <div class="windowContent" style="margin: 0;">
+    <iframe style="border:none;" width="560" height="315" src="https://www.youtube.com/embed/jlIGQhhJRIg?autoplay=1&mute=1" allow="autoplay"></iframe>
+  </div>
+  
+</div>
+
+
+
+<div class="dock">
+    <div class="tooltip">
+        <a href="mailto:lukakolesnykova@protonmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
+        <span class="tooltiptext">Email</span>
+    </div>
+
+    <div class="tooltip">
+        <a href="https://www.linkedin.com/in/luka-kolesnykova/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <span class="tooltiptext">LinkedIn</span>
+    </div>
+
+    <div class="tooltip">
+        <a href="https://listed.to/@Luka" target="_blank"><i class="fa-solid fa-window-restore fa-2x""></i></a>
+        <span class="tooltiptext">Blog</span>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
