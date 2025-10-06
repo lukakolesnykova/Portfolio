@@ -123,17 +123,25 @@ html, body {
   font-family: "IBM Plex Mono", monospace;
   background-color: var(--surface0);
   color: var(--text);
-  cursor: url("/images/cursor/default.png"), auto;
+  /*cursor: url("/images/cursor/default.svg"), auto;*/
 }
 
-.desktopIcon, .closeBtn, .row figure {
-  cursor: url("/images/cursor/pointer.png"), pointer;
+body {
+    background-image: url('/images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+/* .desktopIcon, .titleBar .closeBtn, .row figure {
+  cursor: url("/images/cursor/pointer.svg"), pointer !important;
 }
 
 .titleBar {
-  cursor: url("/images/cursor/move.png"), move;
+  cursor: url("/images/cursor/move.svg"), move !important;
 }
-  
+*/
 
 
 hr {
@@ -247,7 +255,7 @@ hr {
   border-radius: 10px;
   color: var(--text);
   box-shadow: var(--base) 0px 10px 36px 0px, var(--crust) 0px 0px 0px 1px;
-  overflow-y:scroll;
+  overflow: hidden;
   display: none;
 }
 
@@ -267,10 +275,15 @@ hr {
   color: var(--overlay0);
 }
 
-.windowContent{
-    margin:20px;
-    margin-bottom:40px;
-  }
+.windowContent {
+  padding: 20px;
+  padding-bottom: 40px;
+  max-height: calc(75vh - 30px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
 
 b {
   font-weight: bolder;
@@ -331,6 +344,8 @@ b {
   opacity: 0;
   transition: opacity 0.2s;
 }
+
+
 
 .closeBtn:hover {
   background-color: #e6455e;
@@ -511,7 +526,7 @@ b {
   color: #E0E4E6;
 }
 
-#darkSkiesWindow {
+#darkSkiesWindow .windowContent {
   background-color: #0A0A0A;
 }
 
@@ -575,7 +590,7 @@ b {
 
 /* ---------------- falmouth food co-op window ---------------- */
 
-#ffcWindow {
+#ffcWindow .windowContent {
   background-color: #FBFBFF;
 }
 
@@ -586,7 +601,7 @@ b {
 
 /* ---------------- frogcast window ---------------- */
 
-#frogcastWindow {
+#frogcastWindow .windowContent {
   background-color: #FDFDFF;
   font-family: "Fredoka", monospace;
 }
@@ -599,3 +614,6 @@ b {
     display: block;
 }
 
+#aboutWindow p {
+  margin:0;
+}
