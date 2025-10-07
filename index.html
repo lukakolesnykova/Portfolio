@@ -511,13 +511,51 @@
   </div>
   
   <div class="windowContent">
-          <div class="row">
+    <div class="row">
         <figure  onclick="windowDisplay('sealWindow', true)">
             <i class="fa-solid fa-video fa-3x" style="padding: bottom 1em;;"></i> 
-            <figcaption>awesome.mp4</figcaption>
+            <figcaption style="padding-top: 10px;">awesome.mp4</figcaption>
+        </figure>
+
+        <figure onclick="windowDisplay('thanksWindow', true)">
+            <i class="fa-solid fa-file-lines fa-3x" style="padding: bottom 1em;;"></i> 
+            <figcaption style="padding-top: 10px;">thanks.txt</figcaption>
         </figure>
     </div>
   </div>
+  
+</div>
+
+<div class="window" id="thanksWindow">
+  <div class="titleBar">
+    <div class="titleLeft">
+      <i class="fa-solid fa-file-lines"></i> <p>thanks.txt</p>
+    </div>
+
+        <div class="closeBtn" onclick="windowDisplay('thanksWindow', false)">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+  </div>
+
+  <div class="windowTab">
+    <span>File</span>
+    <span>Edit</span>
+    <span>View</span>
+  </div>
+  
+    <div class="windowContent">
+      <p>Special thanks to:</p>
+      <br>
+      <p><b>Clarke Bethell</b> for help with the Javascript</p>
+      <p><a href="https://catppuccin.com/"><b>Catppuccin</b></a> for the theme for this site <3</p>
+      <p>Coded using <a href="https://github.com/VSCodium/vscodium"><b>VSCodium</b></a></p>
+      <p>Folder icons edited from the <a href="https://github.com/catppuccin/papirus-folders"><b>Catppuccin Papirus Folder</b></a> theme</p>
+      <p>Hosting done through <b>Cloudflare Pages</b></p>
+      <p><a href="https://umami.is/"><b>umami.is</b></a> for being a great, open source alternative for analytics</p>
+      <p><a href="https://www.w3schools.com/"><b>W3Schools</b></a> for being the GOAT as always<span class="cursor"></span></p>
+      
+    </div>
   
 </div>
 
