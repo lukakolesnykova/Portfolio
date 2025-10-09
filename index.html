@@ -1,604 +1,784 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luka's Portfolio">
-    <meta name="author" content="Luka K.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Luka's Portfolio" />
+    <meta name="author" content="Luka K." />
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
 
     <script src="js/script.js"></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="999f5b2e-28e8-4f54-bd0c-ae3c9d9e5553"></script>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="999f5b2e-28e8-4f54-bd0c-ae3c9d9e5553"
+    ></script>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 
     <title>Luka K. | Junior UI/UX Designer</title>
-</head>
+  </head>
 
-<body onload="dragToWindows()">
-
-<div class="desktopLeft">
-
-    <div class="desktopIcon" onclick="windowDisplay('aboutWindow', true)">
-    <i class="fa-solid fa-file-lines fa-3x"></i>
-    <span>About</span>
-    </div>
-
-    <div class="desktopIcon" onclick="windowDisplay('projectsWindow', true)">
-    <i class="fa-solid fa-folder fa-3x"></i>
-    <span>Projects</span>
-    </div>
-
-    <div class="desktopIcon" onclick="windowDisplay('galleryWindow', true)">
-    <i class="fa-solid fa-image fa-3x"></i>
-    <span>Gallery</span>
-    </div>
-
-</div>
-
-<div class="desktopRight">
-
-    <div class="desktopIcon" onclick="windowDisplay('languagesWindow', true)">
-    <i class="fa-solid fa-message fa-3x"></i>
-    <span>Languages</span>
-    </div>
-
-    <div class="desktopIcon" onclick="windowDisplay('musicWindow', true)">
-    <i class="fa-solid fa-music fa-3x"></i>
-    <span>Music</span>
-    </div>
-
-    <div class="desktopIcon" onclick="windowDisplay('binWindow', true)">
-    <i class="fa-solid fa-trash fa-3x"></i>
-    <span>Rubbish Bin</span>
-    </div>
-
-</div>
-
-<div class="window" id="aboutWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-file-lines"></i> <p>aboutMe.txt</p>
-    </div>
-
-        <div class="closeBtn" onclick="windowDisplay('aboutWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-
-  </div>
-
-  <div class="windowTab">
-    <span>File</span>
-    <span>Edit</span>
-    <span>View</span>
-  </div>
-  
-    <div class="windowContent">
-        <p>Hi, I'm <b>Luka</b>, a junior UI/UX designer based in the West Midlands and recently graduated with a BA(Hons) in Marketing Communications.</p>
-        <br>
-        <p>I blend visual flair with accessibility to make apps and websites that feel simple but delightful to use. I enjoy prototyping, user-focused problem solving, and picking up new programs and workflows as I go. I get the most joy from seeing an idea becoming something tangible!</p>
-        <br>
-        <p>Want to collab or chat? Pop me an email!<span class="cursor"></span></p>
-        <b>lukakolesnykova@protonmail.com</b>
-    </div>
-  
-</div>
-
-<div class="window" id="projectsWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-folder"></i> <p>My Projects</p>
-    </div>
-
-        <div class="closeBtn" onclick="windowDisplay('projectsWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-
-  </div>
-
-  <div class="windowTab">
-    <span>File</span>
-    <span>Edit</span>
-    <span>View</span>
-    <span>Favourites</span>
-    <span>Tools</span>
-    <span>Help</span>
-  </div>
-  
-  <div class="windowContent">
-
-    <div class="row">
-        <figure  onclick="windowDisplay('darkSkiesWindow', true)">
-            <img src="images/folderDarkSkies.png">
-            <figcaption>Dark Skies App</figcaption>
-        </figure>
-        <figure  onclick="windowDisplay('ffcWindow', true)">
-            <img src="images/folderFFC.png">
-            <figcaption>Falmouth Food Coop</figcaption>
-        </figure>
-        <figure onclick="windowDisplay('frogcastWindow', true)">
-            <img src="images/folderFrogcast.png">
-            <figcaption>Frogcast</figcaption>
-        </figure>
-        <figure  onclick="windowDisplay('kneeGuruWindow', true)">
-            <img src="images/folderKneeGuru.png">
-            <figcaption>KneeGuru</figcaption>
-        </figure>
-    </div>
-
-  </div>
-  
-</div>
-
-<div class="window" id="galleryWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-image"></i> <p>Gallery</p>
-    </div>
-
-        <div class="closeBtn" onclick="windowDisplay('galleryWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-
-  </div>
-  
-    <div class="windowContent">
-
-      <div class="gallery">
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/strykkPosters.webp" alt="Strykk Posters" />
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/treePosterIllustration.webp" alt="Tree Poster Illustration" />
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <video controls autoplay muted loop>
-              <source src="images/gallery/innocentARFilter.mp4" type="video/mp4">
-            </video>
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/adlandPoster.webp" alt="Adland Poster" />
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <video controls autoplay muted loop>
-              <source src="images/gallery/nhsRecruitment.mp4" type="video/mp4">
-            </video>
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/destressFlyer.webp" alt="Destress Office Fest Flyer" />
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/strykkMenu.webp" alt="Strykk Menu" />
-          </figure>
-        </div>
-
-        <div class="gallery-item">
-          <figure>
-            <img loading="lazy" src="images/gallery/giffgaffRefurb.webp" alt="giffgaff Refurb" />
-          </figure>
-        </div>
-
+  <body onload="dragToWindows()">
+    <div class="desktopLeft">
+      <div class="desktopIcon" onclick="windowDisplay('aboutWindow', true)">
+        <i class="fa-solid fa-file-lines fa-3x"></i>
+        <span>About</span>
       </div>
 
+      <div class="desktopIcon" onclick="windowDisplay('projectsWindow', true)">
+        <i class="fa-solid fa-folder fa-3x"></i>
+        <span>Projects</span>
+      </div>
+
+      <div class="desktopIcon" onclick="windowDisplay('galleryWindow', true)">
+        <i class="fa-solid fa-image fa-3x"></i>
+        <span>Gallery</span>
+      </div>
     </div>
-  
-</div>
 
+    <div class="desktopRight">
+      <div class="desktopIcon" onclick="windowDisplay('languagesWindow', true)">
+        <i class="fa-solid fa-message fa-3x"></i>
+        <span>Languages</span>
+      </div>
 
-<div class="window" id="musicWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-music"></i> <p>Last listened... </p>
+      <div class="desktopIcon" onclick="windowDisplay('musicWindow', true)">
+        <i class="fa-solid fa-music fa-3x"></i>
+        <span>Music</span>
+      </div>
+
+      <div class="desktopIcon" onclick="windowDisplay('binWindow', true)">
+        <i class="fa-solid fa-trash fa-3x"></i>
+        <span>Rubbish Bin</span>
+      </div>
     </div>
 
-        <div class="closeBtn" onclick="windowDisplay('musicWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+    <div class="window" id="aboutWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-file-lines"></i>
+          <p>aboutMe.txt</p>
         </div>
 
-  </div>
-  
-  <div class="windowContent">
+        <div class="closeBtn" onclick="windowDisplay('aboutWindow', false)">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="windowTab">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+      </div>
+
+      <div class="windowContent">
+        <p>
+          Hi, I'm <b>Luka</b>, a junior UI/UX designer based in the West
+          Midlands and recently graduated with a BA(Hons) in Marketing
+          Communications.
+        </p>
+        <br />
+        <p>
+          I blend visual flair with accessibility to make apps and websites that
+          feel simple but delightful to use. I enjoy prototyping, user-focused
+          problem solving, and picking up new programs and workflows as I go. I
+          get the most joy from seeing an idea becoming something tangible!
+        </p>
+        <br />
+        <p>
+          Want to collab or chat? Pop me an email!<span class="cursor"></span>
+        </p>
+        <b>lukakolesnykova@protonmail.com</b>
+      </div>
+    </div>
+
+    <div class="window" id="projectsWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-folder"></i>
+          <p>My Projects</p>
+        </div>
+
+        <div class="closeBtn" onclick="windowDisplay('projectsWindow', false)">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="windowTab">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Favourites</span>
+        <span>Tools</span>
+        <span>Help</span>
+      </div>
+
+      <div class="windowContent">
+        <div class="row">
+          <figure onclick="windowDisplay('darkSkiesWindow', true)">
+            <img src="images/folderDarkSkies.png" />
+            <figcaption>Dark Skies App</figcaption>
+          </figure>
+          <figure onclick="windowDisplay('ffcWindow', true)">
+            <img src="images/folderFFC.png" />
+            <figcaption>Falmouth Food Coop</figcaption>
+          </figure>
+          <figure onclick="windowDisplay('frogcastWindow', true)">
+            <img src="images/folderFrogcast.png" />
+            <figcaption>Frogcast</figcaption>
+          </figure>
+          <figure onclick="windowDisplay('kneeGuruWindow', true)">
+            <img src="images/folderKneeGuru.png" />
+            <figcaption>KneeGuru</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="galleryWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-image"></i>
+          <p>Gallery</p>
+        </div>
+
+        <div class="closeBtn" onclick="windowDisplay('galleryWindow', false)">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="windowContent">
+        <div class="gallery">
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/strykkPosters.webp"
+                alt="Strykk Posters"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/treePosterIllustration.webp"
+                alt="Tree Poster Illustration"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <video controls autoplay muted loop>
+                <source
+                  src="images/gallery/innocentARFilter.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/adlandPoster.webp"
+                alt="Adland Poster"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <video controls autoplay muted loop>
+                <source
+                  src="images/gallery/nhsRecruitment.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/destressFlyer.webp"
+                alt="Destress Office Fest Flyer"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/strykkMenu.webp"
+                alt="Strykk Menu"
+              />
+            </figure>
+          </div>
+
+          <div class="gallery-item">
+            <figure>
+              <img
+                loading="lazy"
+                src="images/gallery/giffgaffRefurb.webp"
+                alt="giffgaff Refurb"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="musicWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-music"></i>
+          <p>Last listened...</p>
+        </div>
+
+        <div class="closeBtn" onclick="windowDisplay('musicWindow', false)">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="windowContent">
         <main id="widget">
-          <img id="albumArt" src="https://placehold.co/200" alt="Album Art Placeholder">
+          <img
+            id="albumArt"
+            src="https://placehold.co/200"
+            alt="Album Art Placeholder"
+          />
           <p id="artist">Artist loading...</p>
           <div class="marquee"><p id="track">Track loading...</p></div>
           <p id="album">Album loading...</p>
         </main>
 
         <div class="music-bar">
-            <div class="indicator"></div>
+          <div class="indicator"></div>
         </div>
 
         <div class="mediaPlayback">
-            <i class="fa-solid fa-backward-step fa-2x" style="color:var(--surface1);"></i>
-            <i class="fa-solid fa-circle-play fa-3x"></i>
-            <i class="fa-solid fa-forward-step fa-2x" style="color:var(--surface1);"></i>
+          <i
+            class="fa-solid fa-backward-step fa-2x"
+            style="color: var(--surface1)"
+          ></i>
+          <i class="fa-solid fa-circle-play fa-3x"></i>
+          <i
+            class="fa-solid fa-forward-step fa-2x"
+            style="color: var(--surface1)"
+          ></i>
         </div>
-  </div>
-  
-</div>
-
-<div class="window" id="languagesWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-message"></i> <p>Languages</p>
+      </div>
     </div>
+
+    <div class="window" id="languagesWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-message"></i>
+          <p>Languages</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('languagesWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
-  
-  <div class="windowContent">
-    <div class="msg">
-        <img class="msgProfile" src="images/flagUK.png">
-        <div class="msgText" id="msgLeft" >
+      <div class="windowContent">
+        <div class="msg">
+          <img class="msgProfile" src="images/flagUK.png" />
+          <div class="msgText" id="msgLeft">
             <p>Hello there! I speak English, Russian and learning Japanese!</p>
+          </div>
         </div>
-    </div>
-    <br>
-    <div class="msg" style="flex-direction: row-reverse;">
-        <img class="msgProfile" src="images/flagRussian.png">
-        <div class="msgText" id="msgRight">
-            <p>Привет! Я говорю по-русски! </p>
+        <br />
+        <div class="msg" style="flex-direction: row-reverse">
+          <img class="msgProfile" src="images/flagRussian.png" />
+          <div class="msgText" id="msgRight">
+            <p>Привет! Я говорю по-русски!</p>
+          </div>
         </div>
-    </div>
-    <br>
-    <div class="msg">
-        <img class="msgProfile" src="images/flagJapan.png">
-        <div class="msgText" id="msgLeft">
+        <br />
+        <div class="msg">
+          <img class="msgProfile" src="images/flagJapan.png" />
+          <div class="msgText" id="msgLeft">
             <p>日本語を勉強している</p>
+          </div>
         </div>
+      </div>
     </div>
 
-  </div>
-  
-</div>
-
-<div class="window" id="frogcastWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-frog"></i> <p>Frogcast</p>
-    </div>
+    <div class="window" id="frogcastWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-frog"></i>
+          <p>Frogcast</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('frogcastWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
-  
-    <div class="windowContent">
-      <img src="images/frogcast/frogcastBanner.png">
-      <div class="section02">
-        <h2 style="color: #EF3F4D">Colour Palette</h2>
-        <img src="images/frogcast/colour.png">
-        <br><br><br><br>
-        <h2 style="color: #F8B43D">Target Audience Analysis</h2>
-        <img src="images/frogcast/pactAnalysis.png">
-        <br><br><br><br>
-        <h2 style="color: #8FAA3E">Screen Sketches</h2>
-        <img src="images/frogcast/conceptDaily.png">
-        <img src="images/frogcast/conceptDressup.png">
-        <h2 style="color: #3188DB">Concept design for Frog Character</h2>
-        <img src="images/frogcast/conceptFrog.png">
-        <br><br><br><br>
-        <h2 style="color: #855FDB">Lo-fi wireframes</h2>
-        <img src="images/frogcast/conceptWireframe.webp">
-        <br><br><br><br>
-        <h2 style="color: #EF3F4D">Screens</h2>
-        <img src="images/frogcast/frogcastScreens.webp">
-        <img src="images/frogcast/frogcastScreens2.webp">
+      <div class="windowContent">
+        <img src="images/frogcast/frogcastBanner.png" />
+        <div class="section02">
+          <h2 style="color: #ef3f4d">Colour Palette</h2>
+          <img src="images/frogcast/colour.png" />
+          <br /><br /><br /><br />
+          <h2 style="color: #f8b43d">Target Audience Analysis</h2>
+          <img src="images/frogcast/pactAnalysis.png" />
+          <br /><br /><br /><br />
+          <h2 style="color: #8faa3e">Screen Sketches</h2>
+          <img src="images/frogcast/conceptDaily.png" />
+          <img src="images/frogcast/conceptDressup.png" />
+          <h2 style="color: #3188db">Concept design for Frog Character</h2>
+          <img src="images/frogcast/conceptFrog.png" />
+          <br /><br /><br /><br />
+          <h2 style="color: #855fdb">Lo-fi wireframes</h2>
+          <img src="images/frogcast/conceptWireframe.webp" />
+          <br /><br /><br /><br />
+          <h2 style="color: #ef3f4d">Screens</h2>
+          <img src="images/frogcast/frogcastScreens.webp" />
+          <img src="images/frogcast/frogcastScreens2.webp" />
+        </div>
       </div>
     </div>
-  
-</div>
 
-<div class="window" id="ffcWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-cart-shopping"></i> <p>Falmouth Food Co-Op</p>
-    </div>
+    <div class="window" id="ffcWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Falmouth Food Co-Op</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('ffcWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
-  
-    <div class="windowContent" style="font-family: Poppins, monospace; color: #1B2A54;">
-      <img src="images/ffc/ffcBanner.png">
-        <div class="section01" style="padding-bottom:0;">
-          <div class="section01Img" style="flex: 0 0 60%;">
-          <img src="/images/ffc/overview.png" alt="Home Screenshot">
+      <div
+        class="windowContent"
+        style="font-family: Poppins, monospace; color: #1b2a54"
+      >
+        <img src="images/ffc/ffcBanner.png" />
+        <div class="section01" style="padding-bottom: 0">
+          <div class="section01Img" style="flex: 0 0 60%">
+            <img src="/images/ffc/overview.png" alt="Home Screenshot" />
           </div>
           <div class="section01Text">
-          <h2>Overview</h2>
-          <p>A prototype mobile app for Falmouth Food Co-Op, a community-run online grocery store featuring local, non-industrial farmers. Designed to simplify the current ordering process. Users have expressed the existing site being confusing and difficult to place orders on, making them reluctant to purchase from. </p>
+            <h2>Overview</h2>
+            <p>
+              A prototype mobile app for Falmouth Food Co-Op, a community-run
+              online grocery store featuring local, non-industrial farmers.
+              Designed to simplify the current ordering process. Users have
+              expressed the existing site being confusing and difficult to place
+              orders on, making them reluctant to purchase from.
+            </p>
           </div>
-      </div>
+        </div>
 
-      <div class="section02">
-        <img src="images/ffc/collage.webp">
-        <br><br>
-        <h2>Colour Palette</h2>
-        <p>Simplified their existing colour palette. Bright colourful, reflecting the range of produce they sell and the range of people that they work with.</p>
-        <img src="images/ffc/colourPalette.png">
-        <br>
-        <h2>Empathy Map</h2>
-        <p>Conducted an interview with someone who had never used FFC but would be interested. Gained some valuable insight into new customer bases thoughts & feelings.</p>
-          <img src="images/ffc/empathyMap.png">  
-        
+        <div class="section02">
+          <img src="images/ffc/collage.webp" />
+          <br /><br />
+          <h2>Colour Palette</h2>
+          <p>
+            Simplified their existing colour palette. Bright colourful,
+            reflecting the range of produce they sell and the range of people
+            that they work with.
+          </p>
+          <img src="images/ffc/colourPalette.png" />
+          <br />
+          <h2>Empathy Map</h2>
+          <p>
+            Conducted an interview with someone who had never used FFC but would
+            be interested. Gained some valuable insight into new customer bases
+            thoughts & feelings.
+          </p>
+          <img src="images/ffc/empathyMap.png" />
+
           <h2>User Flow</h2>
-          <p>Evaluated the current FFC ordering process based on their website. Simplified the order process to be more user-friendly and more suitable for an app.</p>
-          <img src="images/ffc/userflow.png">
+          <p>
+            Evaluated the current FFC ordering process based on their website.
+            Simplified the order process to be more user-friendly and more
+            suitable for an app.
+          </p>
+          <img src="images/ffc/userflow.png" />
           <h2>Wireframes</h2>
-          <img src="images/ffc/wireframe.png">
+          <img src="images/ffc/wireframe.png" />
         </div>
 
-          <div class="section01" style="padding-bottom:0;">
-            <div class="section01Img" style="flex: 0 0 75%;">
-            <img src="images/ffc/onboardingScreenshot.png">
-            </div>
-            <div class="section01Text">
-              <h2>Onboarding</h2>
-              <p>Et dolore expedita quia corporis repellat dolore magnam. </p>
-            </div>
+        <div class="section01" style="padding-bottom: 0">
+          <div class="section01Img" style="flex: 0 0 75%">
+            <img src="images/ffc/onboardingScreenshot.png" />
           </div>
-
-          <div class="section02">
-            <h2>Main pages</h2>
-            <img src="images/ffc/homeScreenshot.png">
+          <div class="section01Text">
+            <h2>Onboarding</h2>
+            <p>Et dolore expedita quia corporis repellat dolore magnam.</p>
           </div>
+        </div>
 
-        <div class="section01" style="padding-top:0;">
-        <div class="section01Text">
-          <h2>Order process</h2>
-          <p>Eligendi veniam molestias omnis voluptatem minima autem dolor itaque.</p>
+        <div class="section02">
+          <h2>Main pages</h2>
+          <img src="images/ffc/homeScreenshot.png" />
         </div>
-        <div class="section01Img" style="flex: 0 0 75%;">
-        <img src="/images/ffc/orderScreenshot.png" alt="Order Screenshot">
+
+        <div class="section01" style="padding-top: 0">
+          <div class="section01Text">
+            <h2>Order process</h2>
+            <p>
+              Eligendi veniam molestias omnis voluptatem minima autem dolor
+              itaque.
+            </p>
+          </div>
+          <div class="section01Img" style="flex: 0 0 75%">
+            <img src="/images/ffc/orderScreenshot.png" alt="Order Screenshot" />
+          </div>
         </div>
-      </div>
         <div class="section02">
           <h2>Misc. screens</h2>
-          <img src="images/ffc/miscScreenshot.png">
+          <img src="images/ffc/miscScreenshot.png" />
         </div>
 
-
-
-        <img src="images/ffc/falmouthFoodCoop.webp">
-        
-    </div>
-  
-</div>
-
-<div class="window" id="darkSkiesWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-star"></i> <p>Dark Skies App</p>
+        <img src="images/ffc/falmouthFoodCoop.webp" />
+      </div>
     </div>
 
+    <div class="window" id="darkSkiesWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-star"></i>
+          <p>Dark Skies App</p>
+        </div>
         <div class="closeBtn" onclick="windowDisplay('darkSkiesWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-
-  </div>
-  
-    <div class="windowContent" style="font-family: Montserrat, monospace;">
-      <img src="images/darkSkies/darkSkiesBanner.webp">
-      
-      <div class="section01">
-        <div class="section01Text">
-          <h3>Overview</h3>
-          <h2>We believe everyone should get to experience stargazing.</h2>
-          <p>Stargazing is often inaccessible because good dark sky locations are hard to find - they're usually only shared by word of mouth or far-off observatories. Dark Skies is an app designed to make stargazing accessible for everyone by helping people discover safe, local dark sky locations.</p>
-        </div>
-        <div class="section01Img">
-        <img src="/images/darkSkies/darkSkiesTemp.png" alt="Screenshots">
+          <i class="fa-solid fa-xmark"></i>
         </div>
       </div>
 
-      <div class="section02">
-        <h3>Moodboard</h3>
-        <img src="/images/darkSkies/moodboard.webp" alt="Moodboard">
-        <br><br>
-        <h3>User Flow</h3>
-        <img src="/images/darkSkies/userflow.png" alt="User Flow">
-        <br><br>
-        <h3>High Fidelity Wireframes</h3>
-        <img src="/images/darkSkies/wireframe.png" alt="High Fidelity Wireframes">
-        <br><br><br>
-        <h3>Typography</h3>
-        <img src="/images/darkSkies/typography.png" alt="Typography">
+      <div class="windowContent" style="font-family: Montserrat, monospace">
+        <img src="images/darkSkies/darkSkiesBanner.webp" />
 
-        <h3>Colour Palette</h3>
-        <img src="/images/darkSkies/colours.png" alt="Colour Palette">
-        <br><br><br>
+        <div class="section01">
+          <div class="section01Text">
+            <h3>Overview</h3>
+            <h2>We believe everyone should get to experience stargazing.</h2>
+            <p>
+              Stargazing is often inaccessible because good dark sky locations
+              are hard to find - they're usually only shared by word of mouth or
+              far-off observatories. Dark Skies is an app designed to make
+              stargazing accessible for everyone by helping people discover
+              safe, local dark sky locations.
+            </p>
+          </div>
+          <div class="section01Img">
+            <img src="/images/darkSkies/darkSkiesTemp.png" alt="Screenshots" />
+          </div>
+        </div>
 
+        <div class="section02">
+          <p>
+            Before creating Dark Skies, we wanted to understand what makes
+            stargazing both inspiring and difficult for people. Through
+            competitor research, surveys, and a small focus group, we discovered
+            a clear gap in local discovery.
+          </p>
+          <h2>User Research</h2>
+          <h3>Problem</h3>
+          <p>
+            Many people want to experience stargazing but can't because good
+            dark sky spots are hard to find, in far out observatories, or hidden
+            in word-of-mouth insider channels. This makes stargazing feel
+            inaccessible for beginners and casuals.
+          </p>
+          <h3>Competitors</h3>
+          <p>
+            We compared two main stargazing resources: Dark Sky International
+            and Go Stargazing. While both provide valuable information, they're
+            limited in accessibility - one is web-only and lists only officially
+            recognised dark sky sites (just 21 in the uk), while the other
+            relies on manual submissions and approvals by the "Go Stargazing
+            Team" or councils, which restricts coverage. We saw an opportunity
+            for a more inclusive, user-friendly way to find local stargazing
+            spots through user-submitted stargazing spots.
+          </p>
+          <h3>Survey</h3>
+          <p>
+            Our initial survey reached stargazing enthusiasts across campus and
+            online communities.
+          </p>
+          <p>
+            Most people from our survey expressed they stargazed casually - from
+            gardens, beaches, or dog walks. They are motivated by the emotional
+            and awe-inspiring experience of connecting with the night sky. The
+            main pain points were cloud coverage, light pollution, and
+            difficulty finding dark, safe, nearby locations.
+          </p>
+          <h3>A/B & Hypothesis Testing</h3>
+          <p>
+            To refine our concept, we ran small-scale MVP and A/B tests through
+            instagram ads, comparing three needs: social need (scheduling group
+            meetups), discovery need (finding dark sky zones in your local area)
+            and learning need (helping beginner stargazers to start). Data
+            showed that the local discovery concept resonated most strongly.
+          </p>
+          <img src="images/darkSkies/stats.png" />
+          <h3>Focus Group</h3>
+          <p>
+            Finally, a focus group with interested stargazers that had signed up
+            to our newsletter reinforced these insights. Participants expressed
+            a strong preference for discovering new local spots over organising
+            meetups, noting safety and time concerns when meeting strangers late
+            at night. The common thread across all research was clear -
+            stargazers want a simple, reliable way to find safe, accessible dark
+            sky locations close to home.
+          </p>
+        </div>
+
+        <div class="section02">
+          <h3>User Persona</h3>
+          <img src="/images/darkSkies/userPersona.png" />
+          <h3>Moodboard</h3>
+          <img src="/images/darkSkies/moodboard.webp" alt="Moodboard" />
+          <br /><br />
+          <h3>User Flow</h3>
+          <img src="/images/darkSkies/userflow.png" alt="User Flow" />
+          <br /><br />
+          <h3>High Fidelity Wireframes</h3>
+          <img
+            src="/images/darkSkies/wireframe.png"
+            alt="High Fidelity Wireframes"
+          />
+          <br /><br /><br />
+          <h3>Typography</h3>
+          <img src="/images/darkSkies/typography.png" alt="Typography" />
+
+          <h3>Colour Palette</h3>
+          <img src="/images/darkSkies/colours.png" alt="Colour Palette" />
+          <br /><br /><br />
+        </div>
 
         <h3>App Screenshots</h3>
+        <div class="section01" style="padding-bottom: 0">
+          <div class="section01Img" style="flex: 0 0 60%">
+            <img
+              src="/images/darkSkies/homeScreenshot.png"
+              alt="Home Screenshot"
+            />
+          </div>
+          <div class="section01Text">
+            <h3>Homepage</h3>
+            <h2>Quis beatae</h2>
+            <p>Et dolore expedita quia corporis repellat dolore magnam.</p>
+          </div>
+        </div>
 
-      <div class="section01" style="padding-bottom:0;">
-        <div class="section01Img" style="flex: 0 0 60%;">
-        <img src="/images/darkSkies/homeScreenshot.png" alt="Home Screenshot">
+        <div class="section01" style="padding-top: 0">
+          <div class="section01Text">
+            <h3>Search</h3>
+            <h2>Velit molestiae</h2>
+            <p>
+              Eligendi veniam molestias omnis voluptatem minima autem dolor
+              itaque.
+            </p>
+          </div>
+          <div class="section01Img" style="flex: 0 0 60%">
+            <img
+              src="/images/darkSkies/searchScreenshot.png"
+              alt="Search Screenshot"
+            />
+          </div>
+        </div>
+
+        <h3>Location View</h3>
+        <img
+          src="/images/darkSkies/locationScreenshot.png"
+          alt="Location Screenshot"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a
+          consequatur similique incidunt ipsa reprehenderit earum officiis animi
+          qui ducimus quidem repellat quibusdam amet, impedit tempora excepturi
+          nostrum harum possimus.
+        </p>
+      </div>
+
+      <div class="section01" style="padding-bottom: 0">
+        <div class="section01Img" style="flex: 0 0 60%">
+          <img
+            src="/images/darkSkies/homeScreenshot.png"
+            alt="Home Screenshot"
+          />
         </div>
         <div class="section01Text">
           <h3>Homepage</h3>
-          <h2>Quis beatae </h2>
-          <p>Et dolore expedita quia corporis repellat dolore magnam. </p>
+          <h2>Quis beatae</h2>
+          <p>Et dolore expedita quia corporis repellat dolore magnam.</p>
         </div>
       </div>
 
-        <div class="section01" style="padding-top:0;">
-        <div class="section01Text">
-          <h3>Search</h3>
-          <h2>Velit molestiae</h2>
-          <p>Eligendi veniam molestias omnis voluptatem minima autem dolor itaque.</p>
-        </div>
-        <div class="section01Img" style="flex: 0 0 60%;">
-        <img src="/images/darkSkies/searchScreenshot.png" alt="Search Screenshot">
-        </div>
-      </div>
-      <h3>Location View</h3>
-      
-      <img src="/images/darkSkies/locationScreenshot.png" alt="Location Screenshot" style="display: block; margin-left: auto; margin-right: auto;">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a consequatur similique incidunt ipsa reprehenderit earum officiis animi qui ducimus quidem repellat quibusdam amet, impedit tempora excepturi nostrum harum possimus.</p>
+      <img src="/images/darkSkies/screenshots.webp" />
     </div>
-    <img src="/images/darkSkies/screenshots.webp">
-    </div>
-  
-</div>
 
-<div class="window" id="kneeGuruWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-stethoscope"></i> <p>KneeGuru</p>
-    </div>
+    <div class="window" id="kneeGuruWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-stethoscope"></i>
+          <p>KneeGuru</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('kneeGuruWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
-  
-    <div class="windowContent">
+      <div class="windowContent">
         <p>Work in progress! Come back later :-)<span class="cursor"></span></p>
+      </div>
     </div>
-  
-</div>
 
-<div class="window" id="binWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-trash"></i> <p>Rubbish Bin</p>
-    </div>
+    <div class="window" id="binWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-trash"></i>
+          <p>Rubbish Bin</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('binWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
+      <div class="windowTab">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Favourites</span>
+        <span>Tools</span>
+        <span>Help</span>
+      </div>
 
-  <div class="windowTab">
-    <span>File</span>
-    <span>Edit</span>
-    <span>View</span>
-    <span>Favourites</span>
-    <span>Tools</span>
-    <span>Help</span>
-  </div>
-  
-  <div class="windowContent">
-    <div class="row">
-        <figure  onclick="windowDisplay('sealWindow', true)">
-            <i class="fa-solid fa-video fa-3x" style="padding: bottom 1em;;"></i> 
-            <figcaption style="padding-top: 10px;">awesome.mp4</figcaption>
-        </figure>
+      <div class="windowContent">
+        <div class="row">
+          <figure onclick="windowDisplay('sealWindow', true)">
+            <i class="fa-solid fa-video fa-3x" style="padding: bottom 1em"></i>
+            <figcaption style="padding-top: 10px">awesome.mp4</figcaption>
+          </figure>
 
-        <figure onclick="windowDisplay('thanksWindow', true)">
-            <i class="fa-solid fa-file-lines fa-3x" style="padding: bottom 1em;;"></i> 
-            <figcaption style="padding-top: 10px;">thanks.txt</figcaption>
-        </figure>
+          <figure onclick="windowDisplay('thanksWindow', true)">
+            <i
+              class="fa-solid fa-file-lines fa-3x"
+              style="padding: bottom 1em"
+            ></i>
+            <figcaption style="padding-top: 10px">thanks.txt</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-  </div>
-  
-</div>
 
-<div class="window" id="thanksWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-file-lines"></i> <p>thanks.txt</p>
-    </div>
+    <div class="window" id="thanksWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-file-lines"></i>
+          <p>thanks.txt</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('thanksWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
+      <div class="windowTab">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+      </div>
 
-  <div class="windowTab">
-    <span>File</span>
-    <span>Edit</span>
-    <span>View</span>
-  </div>
-  
-    <div class="windowContent">
-      <p>Special thanks to:</p>
-      <br>
-      <p><b>Clarke Bethell</b> for help with the Javascript</p>
-      <p><a href="https://catppuccin.com/"><b>Catppuccin</b></a> for the theme for this site <3</p>
-      <p>Coded using <a href="https://github.com/VSCodium/vscodium"><b>VSCodium</b></a></p>
-      <p>Folder icons edited from the <a href="https://github.com/catppuccin/papirus-folders"><b>Catppuccin Papirus Folder</b></a> theme</p>
-      <p>Hosting done through <b>Cloudflare Pages</b></p>
-      <p><a href="https://umami.is/"><b>umami.is</b></a> for being a great, open source alternative for analytics</p>
-      <p><a href="https://www.w3schools.com/"><b>W3Schools</b></a> for being the GOAT as always<span class="cursor"></span></p>
-      
+      <div class="windowContent">
+        <p>Special thanks to:</p>
+        <br />
+        <p><b>Clarke Bethell</b> for help with the Javascript</p>
+        <p>
+          <a href="https://catppuccin.com/"><b>Catppuccin</b></a> for the theme
+          for this site <3
+        </p>
+        <p>
+          Coded using
+          <a href="https://github.com/VSCodium/vscodium"><b>VSCodium</b></a>
+        </p>
+        <p>
+          Folder icons edited from the
+          <a href="https://github.com/catppuccin/papirus-folders"
+            ><b>Catppuccin Papirus Folder</b></a
+          >
+          theme
+        </p>
+        <p>Hosting done through <b>Cloudflare Pages</b></p>
+        <p>
+          <a href="https://umami.is/"><b>umami.is</b></a> for being a great,
+          open source alternative for analytics
+        </p>
+        <p>
+          <a href="https://www.w3schools.com/"><b>W3Schools</b></a> for being
+          the GOAT as always<span class="cursor"></span>
+        </p>
+      </div>
     </div>
-  
-</div>
 
-<div class="window" id="sealWindow">
-  <div class="titleBar">
-    <div class="titleLeft">
-      <i class="fa-solid fa-video"></i> <p>awesome.mp4</p>
-    </div>
+    <div class="window" id="sealWindow">
+      <div class="titleBar">
+        <div class="titleLeft">
+          <i class="fa-solid fa-video"></i>
+          <p>awesome.mp4</p>
+        </div>
 
         <div class="closeBtn" onclick="windowDisplay('sealWindow', false)">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
+      </div>
 
-  </div>
-  
-  <div class="windowContent" style="padding: 0;">
-    <iframe style="border:none;" width="560" height="315" src="https://www.youtube.com/embed/jlIGQhhJRIg?autoplay=1&mute=1" allow="autoplay"></iframe>
-  </div>
-  
-</div>
+      <div class="windowContent" style="padding: 0">
+        <iframe
+          style="border: none"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/jlIGQhhJRIg?autoplay=1&mute=1"
+          allow="autoplay"
+        ></iframe>
+      </div>
+    </div>
 
-
-
-<div class="dock">
-    <div class="tooltip">
-        <a href="mailto:lukakolesnykova@protonmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
+    <div class="dock">
+      <div class="tooltip">
+        <a href="mailto:lukakolesnykova@protonmail.com"
+          ><i class="fa-solid fa-envelope fa-2x"></i
+        ></a>
         <span class="tooltiptext">Email</span>
-    </div>
+      </div>
 
-    <div class="tooltip">
-        <a href="https://www.linkedin.com/in/luka-kolesnykova/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <div class="tooltip">
+        <a href="https://www.linkedin.com/in/luka-kolesnykova/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2x"></i
+        ></a>
         <span class="tooltiptext">LinkedIn</span>
-    </div>
+      </div>
 
-    <div class="tooltip">
-        <a href="https://listed.to/@Luka" target="_blank"><i class="fa-solid fa-window-restore fa-2x""></i></a>
+      <div class="tooltip">
+        <a href="https://listed.to/@Luka" target="_blank"
+          ><i class="fa-solid fa-window-restore fa-2x"></i
+        ></a>
         <span class="tooltiptext">Blog</span>
+      </div>
     </div>
-
-</div>
-
-
-
-</body>
-
+  </body>
 </html>
