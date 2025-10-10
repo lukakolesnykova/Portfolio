@@ -526,6 +526,13 @@ b {
   color: #E0E4E6;
 }
 
+#darkSkiesWindow b {
+  color: #E0E4E6;
+  font-family: Montserrat, monospace;
+  font-weight:700;
+  background-color: #00000000;
+}
+
 #darkSkiesWindow .windowContent {
   background-color: #0A0A0A;
 }
