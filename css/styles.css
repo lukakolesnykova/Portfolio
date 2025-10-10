@@ -522,7 +522,7 @@ b {
 
 /* ---------------- dark skies window ---------------- */
 
-#darkSkiesWindow p {
+#darkSkiesWindow p, #darkSkiesWindow li {
   color: #E0E4E6;
 }
 
