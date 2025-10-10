@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,7 @@
       src="https://cloud.umami.is/script.js"
       data-website-id="999f5b2e-28e8-4f54-bd0c-ae3c9d9e5553"
     ></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 
@@ -751,13 +752,8 @@
       </div>
 
       <div class="windowContent" style="padding: 0">
-        <iframe
-          style="border: none"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/jlIGQhhJRIg?autoplay=1&mute=1"
-          allow="autoplay"
-        ></iframe>
+        <lite-youtube videoid="jlIGQhhJRIg" style="border: none; width: 560px; height: 315px" params="mute=1" autoload>
+        </lite-youtube>
       </div>
     </div>
 
