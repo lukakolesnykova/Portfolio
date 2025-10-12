@@ -595,8 +595,6 @@ b {
   padding: 40px;
 }
 
-/* ---------------- falmouth food co-op window ---------------- */
-
 #ffcWindow .windowContent {
   background-color: #FBFBFF;
 }
@@ -606,15 +604,14 @@ b {
   background-color: #ABB3BE;
 }
 
-/* ---------------- frogcast window ---------------- */
-
 #frogcastWindow .windowContent {
   background-color: #FDFDFF;
+  color:#0A0A0A;
   font-family: "Fredoka", monospace;
 }
 
-#frogcastWindow h2 {
-  font-style: normal;
+#frogcastWindow .windowContent p {
+  font-size: 1.15em;
 }
 
 #projectsWindow {
