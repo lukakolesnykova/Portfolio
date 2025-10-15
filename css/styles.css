@@ -43,9 +43,22 @@
   font-style:normal;
 }
 
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
   font-style: italic;
 }
 
@@ -620,4 +633,14 @@ b {
 
 #aboutWindow p, #thanksWindow p {
   margin:0;
+}
+
+#kneeGuruWindow .windowContent {
+  background-color: #FFFFFF;
+  color: #040F1D;
+  font-family: "Open Sans", monospace;
+}
+
+#kneeGuruWindow h2 {
+  color: #074266;
 }
