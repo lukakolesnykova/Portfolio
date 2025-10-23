@@ -644,3 +644,19 @@ b {
 #kneeGuruWindow h2 {
   color: #074266;
 }
+
+#kneeGuruWindow .button {
+  padding: 15px 32px;
+  border: none;
+  background-color: #074266;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  color: white;
+  border-radius: 40px;
+}
+
+#kneeGuruWindow .button:hover {
+  background-color: #040F1D;
+}
